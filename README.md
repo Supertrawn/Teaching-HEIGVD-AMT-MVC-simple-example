@@ -31,3 +31,10 @@ A very simple example to demonstrate the MVC pattern with servlets and JSPs
    2. Reload the page in the browser and verify that you the breakpoint works and that you can inspect variables.
    3. Do the same thing in the `view.jsp` file: the debugger also works in Java Server Pages! 
 9. You can apply the same process for **Wildfly** (JBoss) and **TomEE**. 
+
+
+Objectif 1: implémenter le « challenge » présenté lundi. C’est à dire, implémenter un formulaire de « registration » permettant de créer un compte utilisateur. La validation des champs doit être faite DU COTE SERVEUR. Des messages d’erreurs doivent être affichés à l’utilisateur. Si un utilisateur remplit 3 champs et qu’un des champs contient une erreur, les 2 autres doivent conserver leur état (pas besoin de retaper le mot de passe).
+
+Objectif 2: packager votre solution dans une image docker. Un utilisateur doit pouvoir cloner le repo, aller dans le bon dossier et faire un « docker-compose up » pour tester votre application.
+
+Objectif 3: développer une feature qui affiche la liste de tous les comptes qui ont été créés (pas besoin d’une DB, vous pouvez garder les données en mémoire pour le moment, dans le service). Tôt ou tard, vous devrez gérer la PAGINATION (afficher des pages de 10 utilisateurs, avec les flèches de navigation). Comment gérer ça avec un servlet (comment le client envoie-t-il les bons paramètres dans la requête, comment sont-ils utilisés par le Controller et la Vue?
